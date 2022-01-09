@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tellimus vorm - Suigu Köök</title>
+    <link rel="stylesheet" href="res/css/style.css">
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo"><h1>Suigu Köök</h1></div>
+      <ul class="nav-links">
+          <input type="checkbox" id="checkbox_toggle"/>
+          <label for="checkbox_toggle" class="hamburger">>&#9776;</label>
+          <div class="menu">
+              <li><a href="menu/minust.html">Minust</a></li>
+              <li class="hinnakiri">
+                  Hinnakiri
+                  <ul class="dropdown">
+                      <li><a href="menu/hinnakiri/Tordid.html">Tordid</a> </li>
+                      <li><a href="menu/hinnakiri/Koogid.html">Koogid</a> </li>
+                      <li><a href="menu/hinnakiri/Kringlid.html">Kringlid</a> </li>
+                      <li><a href="menu/hinnakiri/Pirukad.html">Pirukad</a> </li>
+                  </ul>
+              </li>
+              <li><a href="menu/tellimus.html">Esita tellimus</a></li>
+              <li><a href="menu/galerii.html">Galerii</a></li>
+              <li><a href="menu/kontakt.html">Kontakt</a></li>
+          </div>
+      </ul>
+    </nav>
+    <h1>Vormid</h1>
+    <form action="mailto:siret.suigusaar@gmail.com" method="post" enctype="text/plain">
+      <p>
+        <label for="Nimi">Sinu nimi</label><br>
+        <input type="text" id="Nimi" name="nimi" required>
+      </p>
+      <p>
+        <label for="E-mail">Sinu e-mail</label><br>
+        <input type="email" placeholder="E-mail" id="E-mail" name="email" required>
+      </p>
+      <p>
+        <label for="Telefone">Sinu telefon</label><br>
+        <input type="tel" id="Telefone" name="telefon" required>
+      </p>
+      <p>
+        <label for="Kommentaar">Sinu tellimuse kirjeldus (toode, kogus, erisoovid)</label><br>
+        <textarea id="Kommentaar" rows="5" cols="33" name="kommentar" required></textarea>
+      </p>
+      <p>
+        <label type="kuupaev">Millal soovid tellimuse kätte saada</label><br>
+        <input type="date" id="kuupaev" name="kuupaev" required>
+      </p>
+      <p>
+        <label type="aeg">Kellaaeg</label><br>
+        <input type="time" id="aeg" name="kell" required min="09:00">
+      </p>
+      <button type="submit" value="Send">Saada tellimus</button>
+    </form>
+	<script src="index.js"></script>
+  </body>
+</html>
